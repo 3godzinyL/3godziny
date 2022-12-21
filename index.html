@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="Document" />
+    <meta name="description" content="3godziny team kaczuszki" />
+    <title>3godziny</title>
+    <link rel="stylesheet"
+          href="resources/swiper js/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="resources/css/loader.css" />
+    <link rel="stylesheet" href="resources/css/home.css" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="shortcut icon"
+          href="resources/img/favicon.ico"
+          type="image/x-icon" />
+</head>
+<body onload="loaded()">
+    <div class="loader">
+        <div class="c c1"></div>
+        <div class="c c2"></div>
+        <div class="c c3"></div>
+        <div class="c c4"></div>
+        <div class="c c5"></div>
+        <div class="c c6"></div>
+    </div>
+    <script>
+        let loader = document.querySelector(".loader");
+        function loaded() {
+            loader.classList.add("remove");
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 1000);
+        }
+    </script>
+    <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <nav class="navigation">
+        <h1>
+            3godziny
+            <div></div>
+            <div></div>
+        </h1>
+        <ul>
+            <li><a href="#" onclick="home()">Home</a></li>
+            <li><a href="#" onclick="">Projekty</a></li>
+            <script>
+                const items = document.querySelectorAll('li');
+                for (let item of items) {
+                    item.addEventListener('click', () => {
+                        alert('Nie Chciało mi sie');
+                    });
+                }
+            </script>
+        </ul>
+
+
+
+    </nav>
+
+    <div class="container">
+        <div class="layer layer1 active">
+            <div class="home main">
+                <div class="canvas_container">
+                    <canvas></canvas>
+                </div>
+                <div class="content-for-home">
+                    <div class="img-container"></div>
+                    <h1 align="center">3godziny</h1>
+                    <div class="social-icons">
+
+
+                        <div class="s-icon">
+                            <a href="https://github.com/3godzinyL">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <div class="s-name">GitHub</div>
+                        </div>
+
+                        <div class="s-icon">
+                            <a href="#">
+
+                                <i class="fab fa-discord"></i>
+                                
+                            </a>
+                            <div class="s-name">Discord</div>
+
+                            
+
+                        </div>
+
+                        
+                        <div class="s-icon">
+                            <a href="https://www.tiktok.com/@3godzinys/">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <div class="s-name">Tiktok</div>
+                        </div>
+
+                        <div class="s-icon">
+                            <a href="https://open.spotify.com/user/31b75uezatbiakmuv4fbzrkmsxr4">
+                                <i class="fab fa-spotify"></i>
+                            </a>
+                            <div class="s-name">Spotify</div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="titles-for-side-nav">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    <script src="resources/js/anime.min.js"></script>
+    <script src="resources/js/home.js"></script>
+
+
+    <script src="resources/js/main.js"></script>
+
+</body>
+</html>
